@@ -15,11 +15,11 @@ You **should** see metrics as long as your have compute, redis, or cloudsql reso
 
 ## Adding Monitored Resources
 
-To get started all you need to do is to add your metrics to <gcp-metrics.yml>. [For a complete list of GCP](https://cloud.google.com/monitoring/api/metrics_gcp).
+To get started all you need to do is to add your metrics to [gcp-metrics.yml](https://github.com/bpoole6/gcp-exporter/blob/main/src/main/resources/gcp-metrics.yml). [For a complete list of GCP](https://cloud.google.com/monitoring/api/metrics_gcp).
 
 As of writing this, the resource types that are being exported are compute/redis/cloudsql.
 
-If you wanted to add a new type as such as [pub/sub](https://cloud.google.com/monitoring/api/metrics_gcp#gcp-pubsub) then you’d need to add under metrics section of <gcp-metrics.yml>
+If you wanted to add a new type as such as [pub/sub](https://cloud.google.com/monitoring/api/metrics_gcp#gcp-pubsub) then you’d need to add under metrics section of [gcp-metrics.yml](https://github.com/bpoole6/gcp-exporter/blob/main/src/main/resources/gcp-metrics.yml)
 
 ```yaml
 metrics:
