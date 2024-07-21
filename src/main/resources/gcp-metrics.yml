@@ -1,0 +1,28 @@
+---
+apiBase: googleapis.com
+
+metrics:
+  - resourceDomain: compute
+    metrics:
+      - instance/cpu/reserved_cores
+      - instance/cpu/usage_time
+  - resourceDomain: redis
+    metrics:
+      - server/uptime
+      - stats/cpu_utilization
+      - stats/evicted_keys
+      - stats/memory/maxmemory
+      - stats/memory/system_memory_overload_duration
+      - stats/memory/system_memory_usage_ratio
+      - stats/memory/usage
+      - stats/memory/usage_ratio
+      - stats/reject_connections_count
+  - resourceDomain: cloudsql
+    metrics:
+      - database/cpu/utilization
+      - database/disk/bytes_used
+      - database/disk/utilization
+      - database/memory/quota
+      - database/memory/total_usage
+      - database/memory/usage
+      - database/memory/utilization

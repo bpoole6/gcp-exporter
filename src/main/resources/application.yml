@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: gcp-exporter
+  cloud:
+    gcp:
+      project-id: ${GCP_PROJECT_ID}
+management:
+  tracing:
+    enabled: false
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        include: prometheus
+  metrics:
+    tags:
+      application: ${spring.application.name}
