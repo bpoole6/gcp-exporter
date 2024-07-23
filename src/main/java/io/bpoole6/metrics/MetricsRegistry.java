@@ -27,8 +27,8 @@ public class MetricsRegistry {
   private final MeterRegistry registry;
   public MetricsRegistry(MeterRegistry registry, @Value("${spring.cloud.gcp.project-id}") String projectId) throws IOException {
     this.registry = registry;
-    this.descriptorMetadataMap = collectDescriptorMetadata();
     this.projectId = projectId;
+    this.descriptorMetadataMap = collectDescriptorMetadata();
   }
   public Counter getOrCreateCounters(MetricDetail detail) {
 
